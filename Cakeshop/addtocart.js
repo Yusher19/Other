@@ -1,28 +1,89 @@
 const product = [
-    {
-        id: 0,
+     {
+        title: "Chocolate Cake",
+        frosting: "Chocolate",
+        addOns: "Chocolate Syrup, Sprinkles",
         image: 'images/cake1.jpg',
-        title: 'Chocolate Cake',
         price: 250,
     },
     {
-        id: 1,
+        title: "Cupcake",
+        frosting: "Strawberry",
+        addOns: "Vanilla Syrup, Strawberry",
         image: 'images/cake2.jpg',
-        title: 'Fruit Cake',
         price: 300,
     },
     {
-        id: 2,
+        title: "Ice Cream Cake",
+        frosting: "Chocolate",
+        addOns: "Chocolate Syrup",
         image: 'images/cake3.jpg',
-        title: 'Blueberry Cupcakes',
         price: 350,
     },
     {
-        id: 3,
+        title: "Fruit Cake",
+        frosting: "Vanilla",
+        addOns: "Fruits",
         image: 'images/cake4.jpg',
-        title: 'Brown Cake',
         price: 250,
+        
     }
+    {
+        title: "Cake",
+        frosting: "Vanilla",
+        addOns: "Fruits, Blueberry",
+        image: 'images/cake4.jpg',
+        price: 250, 
+    },
+    {
+        title: "Chocolate Cake",
+        frosting: "Chocolate",
+        addOns: "Blueberry, Strawberry",
+        image: 'images/cake2.jpg',
+        price: 300,
+    },
+    {
+        title: "Donuts",
+        frosting: "Chocolate",
+        addOns: "Vanilla Syrup,Chocolate Syrup, Sprinkles",
+        image: 'images/cake2.jpg',
+        price: 300,
+    },
+    {
+        title: "Cake",
+        frosting: "Vanilla",
+        addOns: "Chocolate Syrup, Strawberry",
+        image: 'images/cake2.jpg',
+        price: 300,
+    },
+    {
+        title: "Cupcake",
+        frosting: "Strawberry",
+        addOns: "Vanilla Syrup, Strawberry",
+        image: 'images/cake2.jpg',
+        price: 300,
+    },
+    {
+        title: "Cupcake",
+        frosting: "Vanilla",
+        addOns: "Chocolate, Marshmallow",
+        image: 'images/cake2.jpg',
+        price: 300,
+    },
+    {
+        title: "Cupcake",
+        frosting: "Strawberry",
+        addOns: "Blueberry, Strawberry",
+        image: 'images/cake2.jpg',
+        price: 300,
+    },
+    {
+        title: "Cake",
+        frosting: "Vanilla",
+        addOns: "Strawberry",
+        image: 'images/cake2.jpg',
+        price: 300,
+    },
 
 ];
 const categories = [...new Set(product.map((item)=>
