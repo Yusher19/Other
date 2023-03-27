@@ -23,6 +23,7 @@ const product = [
         title: 'Brown Cake',
         price: 250,
     }
+
 ];
 const categories = [...new Set(product.map((item)=>
     {return item}))]
@@ -37,7 +38,7 @@ document.getElementById('root').innerHTML = categories.map((item)=>
             </div>
         <div class='bottom'>
         <p>${title}</p>
-        <h2>$ ${price}.00</h2>`+
+        <h2>${price}.00 Pesos</h2>`+
         "<button onlick='addtocart("+(i++)+")'>Add to cart</button>"+
         `</div>
         </div>`
@@ -57,7 +58,7 @@ function displaycart(a){
         document.getElementById('cartItem').innerHTML = "Your cart is Empty";
     }
     else{
-        document.getElementById("cartItem").innerHTML = cart.map((items)=>
+        document.getElementById('cartItem').innerHTML = cart.map((items)=>
     {
         var {image, title, price} = items;
         return(
@@ -66,8 +67,8 @@ function displaycart(a){
                 <img class='rowimg' src=${image}>
             </div>
             <p style='font-size:12px;'>${title}</p>
-            <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
-            "<i class='fa-solid fa-trash' onclinc='delElement("+(j++)+")'></i></div>"
+            <h2 style='font-size: 15px;'> ${price}.00 Pesos</h2>`+
+            "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>"
             );
         }).join('');
     }
