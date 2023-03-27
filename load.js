@@ -1,10 +1,20 @@
 const filterProducts =
         (products, searchTerm) => {
                 const regex = new RegExp(searchTerm,"i")
-                const displayedProducts = products.filter( x => x.description.match(regex))
+                const displayedProducts = products.filter( x => x.description.replace(" ","").match(regex))
                 document.querySelector("#products").innerHTML = displayedProducts.map(jsonToHTML).join('')
                 return displayedProducts
   }
+ 
+const displayFilteredProducts = 
+  (event) => {
+    const searchTerm = document.querySelector("#filterForm input").value;
+    filterProducts(products, searchTerm)
+    event.preventDefault()
+  }
+ 
+const filterForm = document.querySelector("#filterForm")
+filterForm.addEventListener( "submit", displayFilteredProducts )
  
 const jsonToHTML =
   (json) => `

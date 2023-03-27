@@ -92,7 +92,7 @@ input[type=text]{
 
 button{
 	float: right;
-	background: lightskyblue;
+	background: none;
 	color: white;
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
@@ -101,8 +101,6 @@ button{
 	font-family: sans-serif;
 	border:none;
 	font-size: 16px;
-
-
 }
 
 h1{
@@ -281,7 +279,7 @@ footer{
 }
 
 form {
-	background-color: #68513d;
+	background-color: #75716c;
 	opacity: 90%;
 	width: 300px;
 	height: 44px;
@@ -289,6 +287,7 @@ form {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-left: 42%;
   }
   input {
 	all: unset;
@@ -297,15 +296,4 @@ form {
 	height: 100%;
 	width: 100%;
 	padding: 6px 10px;
-  }
-  ::placeholder {
-	color: #fff;
-	opacity: 0.7; 
-  }
-  #sr {
-	all: unset;
-	cursor: pointer;
-	width: 88px;
-	height: 44px;
-	
   }
