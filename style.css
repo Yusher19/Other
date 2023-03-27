@@ -14,7 +14,7 @@ body{
 }
 
 header{
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/header.jpg');
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/head.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -222,7 +222,6 @@ h1{
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
-	width: 20%;
 	border-radius: 5px;
 	display: inline-block;
 	margin: 1%;
@@ -241,7 +240,6 @@ img {
 	padding: 2px 16px;
 }
 section{
-	margin-left:10% ;
 	margin-bottom: 5%;
 }
 h4,p{
@@ -260,3 +258,54 @@ footer{
 #bold{
 	font-size: larger;
 }
+
+#products {
+    column-count: 4;
+    column-gap: .5em;
+    margin: 1em;
+}
+ 
+#products .card {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: .1em;
+    break-inside: avoid;
+}
+ 
+#products .card > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    max-width: 100%;
+    display: block;
+}
+
+form {
+	background-color: #68513d;
+	opacity: 90%;
+	width: 300px;
+	height: 44px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  input {
+	all: unset;
+	font: 16px system-ui;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	padding: 6px 10px;
+  }
+  ::placeholder {
+	color: #fff;
+	opacity: 0.7; 
+  }
+  #sr {
+	all: unset;
+	cursor: pointer;
+	width: 88px;
+	height: 44px;
+	
+  }

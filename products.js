@@ -81,6 +81,75 @@ const products = [
         image: 'images/cake16.jpg',
         price: 300,
     },
-    
+    {
+        description:"Chocolate Mud Cupcake",
+        image: 'images/cake17.jpg',
+        price: 300,
+    },
+    {
+        description:"Flourless Orange Cake",
+        image: 'images/cake18.jpg',
+        price: 300,
+    },
+    {
+        description:"Vanilla Cupcakes",
+        image: 'images/cake19.jpg',
+        price: 300,
+    },
+    {
+        description:"Sponge Cake",
+        image: 'images/cake20.jpg',
+        price: 300,
+    },
+    {
+        description:"Chocolate Birthday Cake",
+        image: 'images/cake21.jpg',
+        price: 300,
+    },
+    {
+        description:"Classic No Bake Vanilla",
+        image: 'images/cake22.jpg',
+        price: 300,
+    },
+    {
+        description:"Gluten-Free Persian Cake",
+        image: 'images/cake23.jpg',
+        price: 300,
+    },
+    {
+        description:"Red Velvet Cupcakes",
+        image: 'images/cake24.jpg',
+        price: 300,
+    },
+    {
+        description:"Baked Lemon Cheese Cake",
+        image: 'images/cake25.jpg',
+        price: 300,
+    },
+    {
+        description:"Humming Bird Cake",
+        image: 'images/cake26.jpg',
+        price: 300,
+    },
+    {
+        description:"Marble Cake",
+        image: 'images/cake27.jpg',
+        price: 300,
+    },
+    {
+        description:"Flourless Chocolate Cake",
+        image: 'images/cake28.jpg',
+        price: 300,
+    },
+    {
+        description:"Black Forest Cake",
+        image: 'images/cake29.jpg',
+        price: 300,
+    },
+    {
+        description:"Layered Rainbow Cake",
+        image: 'images/cake30.jpg',
+        price: 300,
+    },
 
 ];
