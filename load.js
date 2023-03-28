@@ -25,6 +25,11 @@ const jsonToHTML =
       <p>
       <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <span itemprop="price">${json.price} Pesos</span>
+        <form id="textBox">
+        <label for="textproduct"></label>
+        <input id="text" name="filter" type="search...">
+        <button type="submit">Customize</button>
+      </form>
       </span>
       <p>
     </div>

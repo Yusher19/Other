@@ -297,3 +297,9 @@ form {
 	width: 100%;
 	padding: 6px 10px;
   }
+
+#textBox{
+	margin:0%;
+	height: 35px;
+	background-color: rgb(83, 83, 83);
+}
