@@ -30,13 +30,12 @@ const jsonToHTML =
       <h4 itemprop="description"><b>${json.description}</b></h4>
  
       <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="price" content="${json.price}">${json.price} Pesos</span>
+        <span id="pr" itemprop="price" content="${json.price}">${json.price} Pesos</span>
       </span>
       
         <input name="filter" type="text" placeholder="Type customization here">
         <button id="button-${generateJsonDigest(json)}" type="submit">Customize</button>
-        <button id=btn2>Add to cart</button>
- 
+        <button id="btn2" type="submit">Add to cart</button>
     </div>
   </div>
   `
@@ -52,7 +51,8 @@ window.onload =
       const url = (await response.json())[0]
       console.log(url)
       return url
-    } else {
+    } 
+    else {
       return "failed"
     }
   }

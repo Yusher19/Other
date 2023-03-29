@@ -291,6 +291,10 @@ footer{
     display: block;
 }
 
+#pr{
+	color: #000;	
+}
+
 form {
 	background-color: #75716c;
 	opacity: 90%;
