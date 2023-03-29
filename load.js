@@ -30,6 +30,9 @@ const jsonToHTML =
       
         <input name="filter" type="text" placeholder="Type customization here">
         <button id="btn2" type="submit">Customize</button>
+        <div>
+        <button id="btn3" type="submit">Add to Cart</button>
+        </div>
  
     </div>
   </div>
