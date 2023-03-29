@@ -291,8 +291,8 @@ footer{
     display: block;
 }
 
-#pr{
-	color: #000;	
+.span{
+	color: black;
 }
 
 form {
