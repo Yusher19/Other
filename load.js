@@ -35,6 +35,7 @@ const jsonToHTML =
       
         <input name="filter" type="text" placeholder="Type customization here">
         <button id="button-${generateJsonDigest(json)}" type="submit">Customize</button>
+        <button id=btn2>Add to cart</button>
  
     </div>
   </div>
