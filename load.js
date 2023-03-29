@@ -30,7 +30,7 @@ const jsonToHTML =
       <h4 itemprop="description"><b>${json.description}</b></h4>
  
       <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span id="pr" itemprop="price" content="${json.price}">${json.price} Pesos</span>
+        <span itemprop="price" content="${json.price}">${json.price} Pesos</span>
       </span>
       
         <input name="filter" type="text" placeholder="Type customization here">
