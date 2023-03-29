@@ -91,7 +91,7 @@ input[type=text]{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-button{
+#btn1{
 	float: right;
 	background: none;
 	color: white;
@@ -306,7 +306,7 @@ form {
   input {
 	all: unset;
 	font: 16px system-ui;
-	color: #fff;
+	color: #000000;
 	height: 100%;
 	width: 100%;
 	padding: 6px 10px;
@@ -318,6 +318,21 @@ form {
 	height: 35px;
 	background-color: rgb(83, 83, 83);
 }
+
+#btn2{
+	float: right;
+	background: rgb(61, 36, 24);
+	color: rgb(252, 250, 250);
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	position: relative;
+	padding: 8px;
+	font-family: sans-serif;
+	border:none;
+	border-radius: 5px 5px 5px;
+	font-size: 16px;
+}
+
 
 @media only screen and (max-width:1180px) {
 	#products {
