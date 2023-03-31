@@ -1,0 +1,86 @@
+.product-card {
+  break-inside: avoid;
+}
+nav { list-style: none;}
+
+table img {
+  max-height: 4em;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/head.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  color: white;
+}
+header h1 { color: white;}
+
+.colorchange{
+	animation:  colorchange 3s infinite;
+}
+
+table { margin: 0; }
+#map { margin: 1em;
+}
+table, #map { border: .5rem solid rgba(20,20,20,.8);}
+
+@keyframes colorchange{
+	0%{color: red;}
+	25%{color:#ecd055 ;}
+	50%{ color: white; }
+	100%{ color:#ecd055	  }
+}
+
+.layout-container  {
+  display: flex;
+  margin: 1em;
+  flex-wrap: wrap;
+}
+.layout-container > * {
+  flex: 1 1 auto; 
+}
+#gcash-payment {
+  height: 20em;
+  text-align: center;
+}
+#gcash-payment img {
+  height: 100%;
+}
+
+#appbar {
+  position: relative;
+  height: 3em;
+  background: #222;
+  width: 100%;
+  z-index: 11;
+}
+#appbar #label-login {
+  float: right;
+  height: 100%;
+  width: 12em;
+  margin: 0;
+}
+
+label#label-login {
+  margin: 0;
+  margin-bottom: 0;
+  height: 100%;
+  padding: 0;
+}
+input#input-checkbox ~ #login-form {
+  display: none;
+  background: #333;
+  padding: 1em;
+  right: 0;
+}
+input#input-checkbox:checked ~ #login-form {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 3em;
+}
+input#input-checkbox{
+  display: none;
+}
+

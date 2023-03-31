@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>ADD MO NA YA Shopping cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+<style>
+    #map{ height: 30em;}
+</style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Flamenco">
+
+    <link rel="stylesheet" type="text/css" href="css/product-card.css">
+    <link rel="stylesheet" type="text/css" href="css/hero.css">
+    <link rel="stylesheet" type="text/css" href="css/masonry.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="https://unpkg.com/tweetnacl@1.0.3/nacl-fast.js"></script>
+    <script src="https://unpkg.com/tweetnacl-util@0.15.1/nacl-util.js"></script>
+
+    <script src="js/products.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/canonicalize.js"></script>
+ 
+</head>
+<body>
+  <div id="appbar">
+  </div>
+ 
+  <div class="layout-container">
+    <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td></td>
+            <td itemscope itemtype="https://schema.org/Quantity">0</td>
+            <td itemscope itemtype="https://schema.org/Offer">
+              <span itemprop="price" content=0>0</span>
+              <meta itemprop="priceCurrency" content="PHP" />
+            </td>
+          </tr>
+        </tfoot>
+
+    </table>
+        <div id="gcash-payment" itemscope itemtype="https://schema.org/PaymentMethod"><img src="gcash.jpg"></div>
+
+  </div>
+       <div id="map"></div>
+
+    <script src="js/load.js"></script>   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/cart.js"></script>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+             <script>
+               const coordinates = [ 14.8171625,121.0177919 ]
+
+               var map = L.map('map').setView( coordinates, 12);
+               L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '' }).addTo(map)
+  L.marker(coordinates).addTo(map)
+    .bindPopup('Cake Shop')
+    .openPopup()
+             </script>
+ 
+</body>
+</html>
